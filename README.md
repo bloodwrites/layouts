@@ -27,6 +27,8 @@ Open the index.html file of the layout you wish to use in a plain text editor li
 
 Go through the file and replace or edit anything that looks like it needs editing, such as titles, links, images, descriptions etc, and content obviously.
 
+If you like, you can edit the style.css file to change colours, images, fonts etc.
+
 If you're stuck, check out [Neocities Tutorials](https://neocities.org/tutorials), and if you're in Fandom, take a look at [Fandom Coders](https://www.fancoders.com/).
 
 Credit for use is not required, but always appreciated. Link to http://bloodwrites.neocities.org.
