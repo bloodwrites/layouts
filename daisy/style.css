@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+
+:root {
+--primary-colour: white;
+--bkgr-colour: #310E2E; 
+--contrast-bkgr: rgba(253,230,93,1);
+--contrast-bkgr2:  rgba(0,0,0,.25);
+--secondary-colour: #FDE65D;
+--tertiary-colour: #310E2E;
+--main-font: "Ubuntu", sans-serif;
+--heading-font: "Great Vibes", cursive;
+--code-font: monospace;
+}
+
+/* mobile first */
+html {
+    scroll-behavior: smooth;
+    background: url("daisy.jpg") no-repeat right center fixed;
+    background-size: cover;
+    height: 100%;
+    background-color: var(--bkgr-colour);
+    line-height: 1.5;
+}
+body {
+    color: var(--primary-colour);
+    font-size: medium;
+    font-family: var(--main-font);
+}
+
+a:link, a:visited {
+    color: var(--secondary-colour);
+    text-decoration: none;
+}
+a:hover, a:active {
+    background-color: var(--contrast-bkgr);
+    color: var(--tertiary-colour);
+    text-shadow: none;
+}
+
+h1,h2,h3 {
+    font-family: var(--heading-font);
+    margin-bottom: 0;
+    font-weight: normal;
+}
+h1 {font-size: 3em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+
+blockquote {
+    border-left: 2px solid var(--secondary-colour);
+    padding-left: 1em;
+    margin: 1em;
+    font-style: italic;
+}
+
+code, pre {
+    font-family: var(--code-font);
+    font-size: .9em;
+    background-color: var(--contrast-bkgr2);
+    padding: .2em;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    border: 1px solid var(--tertiary-colour);
+}
+
+p {}
+em {font-style: italic;}
+strong {font-weight: bold;}
+ul, ol {padding: 1em;}
+
+hr {
+    width: 75%;
+    border: 0;
+    margin: 1em auto;
+    border-bottom: 1px solid var(--secondary-colour);
+}
+
+header,nav,section,footer { 
+    max-width: 800px;   
+    border: 1px solid var(--tertiary-colour);
+    background-color: var(--contrast-bkgr2);
+    padding: 1em;
+    margin: 1em;
+    backdrop-filter: blur(15px);
+    text-shadow: 1px 1px 0px var(--tertiary-colour);
+}
+
+header {text-align: center;}
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+header p {
+    margin: 0;
+}
+
+nav {
+    padding: 0;
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0; padding: 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 0; padding: .4em;
+    display: inline;
+    list-style-type: none;
+}
+nav ul li a {margin: 0; padding: .5em;}
+
+main {}
+section {}
+article {}
+
+footer {
+    font-size: .8em;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+}

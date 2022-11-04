@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+    transition: .5s;
+    scroll-behavior: smooth;
+  }
+
+:root {
+--primary-colour: #ECF0BD;
+--background-colour: #1E1911;
+--secondary-colour: #943C1C;
+--tertiary-colour: #375543;
+--main-font: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+  "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+--code-font: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", 
+  "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+  "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+--heading-font: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+  "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+
+/* mobile first */
+body {
+  font-size: 10pt;
+  font-family: var(--main-font);
+  line-height: 1.5;
+  letter-spacing: .1em;
+  background-color: var(--background-colour);
+  color: var(--primary-colour);
+  margin: 3em 3em 0 3em;
+  font-weight: normal;
+  text-align: justify;
+}
+
+a:link, a:visited {
+  color: var(--primary-colour);
+  letter-spacing: .2em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--secondary-colour);
+  padding: .1em 0;
+}
+a:hover, a:active {
+  background-color: var(--tertiary-colour);
+  border: none;
+}
+
+h1,h2,h3 {
+  font-weight: bold;
+  color: var(--secondary-colour);
+  text-transform: uppercase;
+  margin: 1rem 0;
+  padding: 0;
+  font-family: var(--heading-font);
+}
+h1 {font-size: 1.5rem;}
+h2 {font-size: 1.25rem;}
+h3 {font-size: 1rem;}
+p {
+  margin: 1em 0;
+  padding: 0;
+}
+blockquote {
+  font-style: italic;
+  border-left: 2px solid var(--primary-colour);
+  padding: 1rem;
+    text-align: left;
+  background-color: rgba(255,255,255,.05);
+}
+
+hr {
+  width: 75%;
+  border-top: none;
+  border-bottom: 1px solid var(--tertiary-colour);
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  border-bottom: 2px solid var(--tertiary-colour);padding: 1em 0 2em 0;
+}
+header h1 {font-size: 1.75em;}
+nav {text-transform: uppercase;}
+nav ul,
+footer ul {
+  margin: 0;padding: 1em 0;
+}
+nav ul li,
+footer ul li {
+  display: inline;
+  padding: 0 1em 0 0;
+}
+footer ul li:last-of-type,
+nav ul li:last-of-type {
+  padding-right: 0;
+}
+
+main {
+  margin-top: 2em; 
+}
+
+main img {
+  border: 1px solid var(--tertiary-colour);
+  max-height: 20em;
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+  opacity: 1;
+}
+main img:hover {
+  opacity: .5;
+}
+
+#subfooter {
+  border-top: 1px solid var(--tertiary-colour);
+  font-size: .9em;
+}
+#subfooter h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+#subfooter article {
+  margin: 2em 0 3em 0;
+}
+
+footer {
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding-top: 2em;
+  padding-bottom: 0;
+  font-size: .8em;
+}
+
+code, pre {font-family: var(--code-font);}
+i,em {font-style: italic;}
+b,strong {font-weight: bolder;}
+ul,ol {margin: 1em; padding: 0;}
+small {font-size: 80%;}
+sub,sup {font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sub {bottom: -0.25em;}
+sup {top: -0.5em;}
+img {border-style: none; max-width: 100%;}
+input {font-size: medium; border: 1px solid var(--primary-colour); border-radius: 0; background-color: var(--background-colour);}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+    
+header,footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+nav ul,footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  flex: row nowrap;
+}
+  main section:first-of-type {
+    flex-basis: 33%;
+  }
+  main section:last-of-type {
+    flex-basis: 66%;
+  }
+  
+#subfooter {
+  display: flex;
+  flex: row nowrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+  
+  #subfooter article {
+    flex-basis: 33%;
+  }
+
+}
+
+@media only screen and (min-width: 1370px) {
+  
+  body {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}

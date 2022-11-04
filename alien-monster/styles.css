@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+}
+/* mobile first */
+body {
+  color: #211500;
+  background-color: #EDEDED;
+  font-size: medium;
+  font-family: 'Latin Modern Mono';
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+}
+a:link,
+a:visited {
+  color: #B33D33;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline #211500;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+  text-decoration: underline dashed rgba(218, 187, 60, 0.5);
+  font-family: 'Latin Modern Mono';
+}
+h1 {
+  font-size: 20pt;
+}
+h2 {
+  font-size: 17pt;
+}
+h3 {
+  font-size: 12pt;
+}
+mark {
+  padding: 0 0.1em;
+  background-color: rgba(218, 187, 60, 0.5);
+}
+abbr {
+  text-decoration: underline dotted #B33D33;
+}
+blockquote {
+  border-left: 3px solid rgba(218, 187, 60, 0.5);
+  padding-left: 0.5em;
+  margin: 1em 0;
+  font-style: italic;
+}
+i,
+em {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: bold;
+}
+header {
+  background-image: url(alien-arcade-background-1670977.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1em;
+  border-bottom: 1px solid #211500;
+}
+header h1 {
+  text-transform: uppercase;
+  margin-top: 4em;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-family: 'Latin Modern Mono';
+  font-size: 44pt;
+  line-height: 1;
+}
+header p {
+  margin-bottom: 1em;
+  font-style: italic;
+}
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-transform: uppercase;
+  background-color: #211500;
+}
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+  padding: 0.5em;
+  color: #EDEDED;
+}
+nav a:hover,
+nav a:active {
+  background-color: #B33D33;
+  text-decoration: none;
+}
+nav p {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+main {
+  flex: 1;
+  order: 2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+main p {margin-bottom: .5em;}
+#section1,
+#section2,
+#section3 {
+  padding: 1em;
+  flex: 1;
+  min-width: 300px;
+}
+article {
+  border: 1px dashed #B33D33;
+  padding: 1em;
+}
+article h1,
+article h2,
+article h3 {
+  text-decoration: none;
+  background-color: rgba(218, 187, 60, 0.5);
+  margin: 0;
+}
+footer {
+  text-transform: uppercase;
+  color: #EDEDED;
+  background-color: #211500;
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
+  order: 99;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover,
+footer a:active {
+  color: #EDEDED;
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+  #section1,
+  #section2,
+  #section3 {
+    min-width: 400px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  body {
+    border-left: 5px solid #211500;
+    border-right: 5px solid #211500;
+    height: 100%;
+  }
+}
