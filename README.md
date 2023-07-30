@@ -31,4 +31,4 @@ If you like, you can edit the style.css file to change colours, images, fonts et
 
 If you're stuck, check out [Neocities Tutorials](https://neocities.org/tutorials), and if you're in Fandom, take a look at [Fandom Coders](https://www.fancoders.com/).
 
-Credit for use is not required, but always appreciated. Link to http://bloodwrites.neocities.org.
+Credit for use is not required, but always appreciated. Link to http://dldr.xyz.
